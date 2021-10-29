@@ -8,8 +8,12 @@ Dichiariamo chi ha vinto.
 */
 
 // Utente inserisce un numero da 1 a 5
-let userNum = parseInt(prompt('Inserisci un numero da 1 a 5: '));
-console.log('Il numero scelto user è: ',userNum);
+let userNum = null;
+// Controlliamo se il numero inserito è compreso tra 1 e 5.
+do{
+    userNum = parseInt(prompt('Inserisci un numero da 1 a 5: '));
+    console.log('Il numero scelto user è: ',userNum);
+}while (!( (userNum>=1)&&(userNum<=5) ) );
 
 // Utente sceglie PARI o DISPARI
 let betUser = null;
