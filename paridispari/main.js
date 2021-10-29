@@ -19,8 +19,8 @@ let userChose = prompt('Scegli tra pari o dispari: ');
 console.log(`hai scelto ${userChose}!`);
 if (userChose === 'pari'){
     betUser = true;
-    betPC = false; 
-} else if (userChose === 'dispari'){
+    betPC = false;   
+} else{
     betUser = false;
     betPC = true;
 }
@@ -45,20 +45,22 @@ if (result === betUser){
 }
 
 // FUNZIONI
-// funzione 
+// funzione numero random
 function numRandom(){
     return x = Math.floor(Math.random() * 5) + 1;
 }
 
+//funzione somma numeri
 function somma(x, y){
     return sum = x + y;
 }
 
+//funzione numero pari o dispari
 function pariDispari(totale){
     let pari = null;
     if (totale % 2 === 0){
         pari = true;
     }else pari = false;
-    console.log('é pari: ',pari);
+    console.log('la somma è pari? ',pari);
     return pari;
 }
