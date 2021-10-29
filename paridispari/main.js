@@ -14,16 +14,18 @@ let userNum = parseInt(prompt('Inserisci un numero da 1 a 5: '));
 let userChose = prompt('Scegli tra pari o dispari: ');
 
 // Generiamo e salviamo un numero random sempre da 1 a 5 per il PC
-let pcNum = pariDispari();
+let pcNum = numRandom();
 console.log(pcNum);
 
 // Sommiamo il numero del Utente e del PC
+let sumTot = somma();
 
 // Controlliamo se il valore della somma ottenuta è pari o dispari ---> NB creare poi una FUNZIONE per questo!!!
 
 // Output Vincitore.
 
 // FUNZIONI
-function pariDispari(){
+// funzione 
+function numRandom(){
     return x = Math.floor(Math.random() * 5) + 1;
 }
