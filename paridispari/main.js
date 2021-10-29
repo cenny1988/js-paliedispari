@@ -18,16 +18,22 @@ do{
 // Utente sceglie PARI o DISPARI
 let betUser = null;
 let betPC = null;
-let userChose = prompt('Scegli tra pari o dispari: ');
+let userChose = null;
+do {
+    userChose = prompt('Scegli tra pari o dispari: ');
+    console.log(`hai scelto ${userChose}!`);
+} while (!((userChose === 'pari') || (userChose === 'dispari')));
+    
 
-console.log(`hai scelto ${userChose}!`);
 if (userChose === 'pari'){
     betUser = true;
-    betPC = false;   
-} else{
+    betPC = false;
+    //controlloChose = true; 
+} else if(userChose === 'dispari'){
     betUser = false;
     betPC = true;
-}
+    //controlloChose = true;
+} else('scelta non corretta');
 
 // Generiamo e salviamo un numero random sempre da 1 a 5 per il PC
 let pcNum = numRandom();
