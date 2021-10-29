@@ -28,12 +28,10 @@ do {
 if (userChose === 'pari'){
     betUser = true;
     betPC = false;
-    //controlloChose = true; 
 } else if(userChose === 'dispari'){
     betUser = false;
     betPC = true;
-    //controlloChose = true;
-} else('scelta non corretta');
+} 
 
 // Generiamo e salviamo un numero random sempre da 1 a 5 per il PC
 let pcNum = numRandom();
